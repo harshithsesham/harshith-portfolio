@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Harshithsesham_Resume_final_apply.pdf';
+    const resumeUrl = 'Harshithsesham_Resume_final_apply.pdf';
     window.open(resumeUrl, '_blank'); // Open the resume in a new tab
   };
 
