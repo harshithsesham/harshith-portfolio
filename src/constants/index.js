@@ -20,6 +20,17 @@ import {
   mathwork,
   CompileVortex,
   eduskill,
+  amazon,
+  tcs,
+  spurcroft,
+  rice,
+  chatapp,
+  clip,
+  portfolio,
+  ricebook,
+  signlanguage,
+  videocaptioning
+
 } from "../assets";
 
 export const navLinks = [
@@ -57,114 +68,117 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    title: "Amazon",
+    company_name: "Amazon",
+    icon: amazon,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "Aug 2023 - Present",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Developed a self-serve blueprint configuration tool using Java, DynamoDB, and Coral endpoints on Amazon EC2, automating live event updates and saving $5M+ in manpower costs.",
+      "Collaborated with cross-functional teams to build infrastructure for automated live event broadcasts, contributing to a $100M sports broadcast partnership.",
+      "Introduced a shadow testing strategy, enhancing system resiliency by 25% and adopted by 30+ Amazon teams for improved stability and risk mitigation.",
+      "Launched 15+ risk messaging systems in the Galileo framework, tailored for localized Prime experiences, resulting in measurable user engagement gains.",
+      "Resolved high-severity on-call tickets, reducing operational workload and maintaining team efficiency with fewer than 10 active tickets."
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    title: "Software Engineer",
+    company_name: "Spurcroft Inc",
+    icon: spurcroft,
     iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    date: "Jan 2023 - Aug 2023",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
+      "Developed controllers, interfaces, and implementation classes using the Spring MVC framework at Spurcroft Inc.",
+      "Leveraged a microservices architecture with Spring Boot-based services and REST for seamless data exchange.",
+      "Integrated RESTful and GraphQL APIs using JavaScript, reducing data retrieval times by 15%."
     ],
   },
   {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
+    title: "Graduate Teaching Assistant",
+    company_name: "Rice University",
+    icon: rice,
     iconBg: "#161329",
-    date: "June 2023 - July 2023",
+    date: "Aug 2022 - Dec 2022",
     points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Conducted weekly office hours to clarify concepts, guide problem-solving approaches, and assist with coursework for a class of 60 students.",
+      "Curated challenging and engaging assignments and exams to enhance students' understanding of advanced algorithmic concepts."
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Chat App - Object-oriented programming",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "Built a browser-based chat app for my Grad class COMP 504: Graduate Object-Oriented Programming and Design. The system allows users to join rooms and send messages, backed by cloud-based data storage and subscription management services for seamless operation and scalability.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "React", color: "green-text-gradient" },
+      { name: "Java", color: "pink-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: chatapp,
+    source_code_link: "https://github.com/harshithsesham/chat-api-direwolves-frontend-harshith",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "My Portfolio Website",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "Developed a dynamic, responsive personal portfolio using React to showcase skills, projects, and professional journey. The portfolio features a modern design with interactive animations and a fully responsive layout for optimal cross-device experience. Built with React’s component-based architecture for scalability and efficient updates.",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Javascript", color: "green-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: portfolio,
+    source_code_link: "https://github.com/harshithsesham/harshithsesham",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Video Captioning System using Tensorflow",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "Implemented a video captioning system using VGG16 for feature extraction and a sequence-to-sequence RNN/LSTM architecture in TensorFlow. Optimized real-time text prediction with greedy and beam search, achieving a 75%+ validation score using BLEU, ROUGE-L, and CIDEr metrics.",
     tags: [
       { name: "Machine Learning", color: "blue-text-gradient" },
       { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
     ],
-    image: mhft,
+    image: videocaptioning,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://drive.google.com/file/d/1H73MAzIUoOt-tPnQKFCfdHKUqVbI0BCu/view?usp=drive_link",
   },
   {
-    name: "PayloadMaster",
+    name: "Social media app(Ricebook)",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Developed a full-stack Facebook-like web application with a React.js frontend and a Node.js backend, hosted on Heroku for reliable deployment. Designed a modern, cohesive interface using CSS and Semantic UI for a visually appealing user experience. The project highlights my ability to build scalable, functional, and aesthetically pleasing web applications.",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "Java", color: "blue-text-gradient" },
+      { name: "Javascript", color: "green-text-gradient" },
+      { name: "React", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    image: ricebook,
+    source_code_link: "https://github.com/harshithsesham/chat-api-direwolves-frontend-harshith",
   },
   {
-    name: "CompileVortex",
+    name: "Real Time Fingerspelled Sign Language Recognition App",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Developed a Sign Language Recognition app using deep learning to translate hand gestures into text or speech, bridging communication gaps for individuals with hearing or speech impairments. The app leverages a CNN with transfer learning on pre-trained ImageNet models for high-accuracy gesture recognition. It processes live or pre-captured images in real-time, providing a user-friendly, accessible tool for inclusive communication.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Tensorflow", color: "green-text-gradient" },
+      { name: "OpenCV", color: "pink-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" }
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    image: signlanguage,
+    source_code_link: "",
   },
   {
-    name: "Sketcher",
+    name: "A multi-modal vision and language model to detect harmful social media memes",
     description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+      "Proposed the use of CLIP (Contrastive Language–Image Pre-training), OpenAI’s multimodal model, to analyze multimodal hate speech and benchmark its performance against state-of-the-art models by Facebook AI. Testing on 500 validation samples yielded a surprising 57.8% accuracy without any training, demonstrating performance comparable to Facebook’s research findings.",
     tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
+      { name: "Tensorflow", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
     ],
 
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: clip,
+    source_code_link: "",
   },
 ];
