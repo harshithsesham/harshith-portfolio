@@ -13,6 +13,14 @@ const Navbar = () => {
     const resumeUrl = 'Harshithsesham_Resume_final_apply.pdf';
     window.open(resumeUrl, '_blank'); // Open the resume in a new tab
   };
+  const openLinkedin = () => {
+    const linkedinurl = 'https://www.linkedin.com/in/harshith-sesham-a06043199/';
+    window.open(linkedinurl, '_blank'); // Open the resume in a new tab
+  };
+  const openGithub = () => {
+    const githuburl = 'https://github.com/harshithsesham';
+    window.open(githuburl, '_blank'); // Open the resume in a new tab
+  };
 
   useEffect(() => {
     if (toggle) {
@@ -44,6 +52,20 @@ const Navbar = () => {
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
         <button onClick={toggleResume}>Resume</button>
+      </li>
+      <li
+          className={`text-${
+              isSecondary ? 'secondary' : 'white'
+          } hover:text-white text-[20px] font-medium cursor-pointer`}
+      >
+        <button onClick={openLinkedin}>Linkedin</button>
+      </li>
+      <li
+          className={`text-${
+              isSecondary ? 'secondary' : 'white'
+          } hover:text-white text-[20px] font-medium cursor-pointer`}
+      >
+        <button onClick={openGithub}>GitHub</button>
       </li>
     </ul>
   );
