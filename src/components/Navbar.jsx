@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import { close, logo, menu } from '../assets';
 import { navLinks } from '../constants';
 import { styles } from '../styles';
+import resume from '/public/Harshithsesham_Resume_final_apply.pdf'
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/harshith-portfolio/public/harshith-portfolio/Harshithsesham_Resume_final_apply.pdf';
-    window.open(resumeUrl);
+    const resumeUrl = '/Harshithsesham_Resume_final_apply.pdf';
+    window.open(resumeUrl, '_blank'); // Open the resume in a new tab
   };
 
   useEffect(() => {
