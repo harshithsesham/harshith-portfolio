@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Harshithsesham_Resume_final_apply.pdf';
+    const resumeUrl = '/harshith-portfolio/public/harshith-portfolio/Harshithsesham_Resume_final_apply.pdf';
     window.open(resumeUrl);
   };
 
